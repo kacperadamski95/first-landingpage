@@ -2,6 +2,50 @@
 html {
     font-size: 62.5%;
 } 
-body {
-background-color: aquamarine;
+body{
+    background-color:rgba(21, 224, 224, 0.678);
+}
+.navigation {
+    font-size: 20px;
+}
+
+h1{
+font-size: 30px;
+font-weight: bold;
+color:white;
+padding: 3px 5px 5px 3px;
+}
+h2{
+font-size: 25px;
+font-weight: bold;
+color:green;
+padding: 3px 5px 5px 3px;
+}
+
+p{
+    font-size: 20px;
+    width: 400px;
+    height: 300px;
+}
+img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+.circle{
+    background-color: greenyellow;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+}
+section{
+    display: flex;
+}
+.blocks{
+flex-direction: column;
 }
