@@ -5,6 +5,7 @@
 <head>
   <title>My website which I want to imitate</title>
   <link href="css/base.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -13,35 +14,33 @@
     <nav class="navigation">
       Kacper Adamski editor
     </nav>
+    <ul class="header-links--desktop">
+      <li><a href="my-experience.html">My experience</a></li>
+      <li><a href="my-project.html">My project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </header>
   <hr>
   <main>
     <section>
-      <div class="blocks">
-        <img src="./images/kacpertoja.png">
-      </div>
-
       <div class="columns">
         <h1>SIEMANKO</h1>
         <h2>A little bit about me</h2>
-        <p>I'm Kacper Adamski, this is my first attempt to imitate a website. I started programming a month ago and I
+        <p class="introduction">I'm Kacper Adamski, this is my first attempt to imitate a website. I started programming
+          a month ago and I
           want
           to do it for a living.
           You will see more of my projects soon, if you are interested in my progress you can check my GitHub
           repositories.
           AHOY! </p>
-
-
-
-        <div class="blocks">
-          <div class="round-elements">
-            <div class="circle first-color"><span> My experience </span></div>
-            <div class="circle second-color"><span> My projects </span></div>
-            <div class="circle third-color"><span> Contact </span></div>
-          </div>
+        <div class="round-elements">
+          <div class="circle first-color"><span><a href="my-experience.html"> my experience </a></span></div>
+          <div class="circle second-color"><span><a href="my-project.html"> my projects </a></span></div>
+          <div class="circle third-color"><span><a href="contact.html"> contact </a></span></div>
         </div>
-      </div>
 
+      </div>
+      <img src="./images/kacpertoja.png" class="profile-image">
     </section>
 
   </main>
@@ -61,9 +60,9 @@
         <h4>kacper.adamskii</h4>
       </div>
       <div>
-      <h5>© 2022 By Kacper Adamski.</h5>
-      <h5>Proudly created with Visual Studio Code</h5>
-    </div>
+        <h5>© 2022 By Kacper Adamski.</h5>
+        <h5>Proudly created with Visual Studio Code</h5>
+      </div>
     </div>
   </footer>
 </body>
