@@ -3,6 +3,41 @@ html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
 } 
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px 0px 30px; 
+}
+
+.editor-name{
+    padding: 0px 0px 0px 15px;
+}
+
+.header-links--desktop{
+    font-size: 16px;
+    display: inline-flex;
+    flex-direction: row;
+    width: 280px; 
+    list-style-type: none;
+}
+
+.header-experience{
+padding-right: 10px;
+}
+
+.header-contact{
+padding-left: 10px;
+}
+
+.menu-icon{
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px 2px 0px;
+
+}
+
 body{
     background-color:rgb(243,243,243);
 }
@@ -12,6 +47,7 @@ footer{
 }
 .navigation {
     font-size: 20px;
+    display:inline-flex;
 }
 .circle{
     font-size: 18px;
@@ -24,8 +60,7 @@ footer{
     text-align: center;
     align-items: stretch;
     border-style: groove;
-    }
-
+    } 
 h1{
     font-weight: bold;
     color:rgb(0, 0, 0);
@@ -49,17 +84,32 @@ h5{
     font-size: 12px;
     font-weight: 200;
 }
+.header-circle{
+    background-color: rgb(238,163,2);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
 p{
     font-size: 15px;
     font-weight: 300;
     }
-img{
 
+.ig-image{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: flex-end;
+        }
+
+img{
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     padding: 5px 5px 5px 5px;
 }
 .introduction{
-    width: 400px;
+    max-width: 390px;
 }
 
 .circle{
@@ -83,11 +133,25 @@ img{
     font-size: 19px;
 }
 
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
 
+    header{
+        padding: 10px 30px 0px 10px;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: flex-start;
+    }
+
     .header-links--desktop{
         display: none;
+    }
+
+    h1{
+        font-size:16px;
     }
 
     .circle{
@@ -111,11 +175,12 @@ img{
         justify-content: space-around;
         padding: 0px 0px 5px 0px;
     }
+}
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
-    /* .ikonka co ją dodam później{
+    .menu-icon{
         display: none;
-    } */
+    }
 
     main {
         height: 880px;
@@ -125,7 +190,7 @@ img{
     
 
     section {
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -149,6 +214,7 @@ img{
         order: 1;
         width: 450px;
         height: 450px;
+        padding: 0px 35px 0px 0px;
     }
 
     .columns{
