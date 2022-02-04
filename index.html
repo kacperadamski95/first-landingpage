@@ -11,32 +11,37 @@
 <body>
   <header>
     <nav class="navigation">
-      <div class="header-circle"> </div>
-      <div class="editor-name">Kacper Adamski editor</div>
-     </nav>
-      <ul class="header-links--desktop">
-      <li class="header-experience"><span><a href="my-experience.html">My experience</a></span></li>
-      <li><span><a href="my-project.html">My project</a></span></li>
-      <li class="header-contact"><span><a href="contact.html">Contact</a></span></li>
-    </ul>
+      <div class="header__left-side">
+        <span class="header-circle"> </span>
+        <span class="header-title">Kacper Adamski editor</span>
+      </div>
+      <div class="header-links">
+        <ul class="header-links--desktop">
+          <li class="header__link1"><a href="my-experience.html">My experience</a></li>
+          <li class="header__link2"><a href="my-project.html">My project</a></li>
+          <li class="header__link3"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <img src="images/basic-menu.png" class="menu-icon">
+    </nav>
   </header>
   <main>
-    <section>
+    <section class="introduction-section">
       <div class="columns">
         <h1>SIEMANKO</h1>
         <h2>A little bit about me</h2>
-        <p class="introduction">I'm Kacper Adamski, this is my first attempt to imitate a website. I started programming
+        <p class="introduction__text">I'm Kacper Adamski, this is my first attempt to imitate a website. I started programming
           a month ago and I
           want
           to do it for a living.
           You will see more of my projects soon, if you are interested in my progress you can check my GitHub
           repositories.
           AHOY! </p>
-        <div class="round-elements">
-          <div class="circle first-color"><span><a href="my-experience.html"> my experience </a></span></div>
-          <div class="circle second-color"><span><a href="my-project.html"> my projects </a></span></div>
-          <div class="circle third-color"><span><a href="contact.html"> contact </a></span></div>
+        <div class="circles__container">
+          <div class="circle circle--first"><span><a href="my-experience.html"> my experience </a></span></div>
+          <div class="circle circle--second"><span><a href="my-project.html"> my projects </a></span></div>
+          <div class="circle circle--third"><span><a href="contact.html"> contact </a></span></div>
         </div>
 
       </div>
@@ -57,7 +62,8 @@
       </div>
       <div class="instagram">
         <h3>Follow me on instagram</h3>
-        <a href="https://www.instagram.com/kacper.adamskii/"><img src="images/instagram.png" class="ig-image"></a>
+        <a href="https://www.instagram.com/kacper.adamskii/"><img src="images/instagram.png"
+            class="icon--instagram"></a>
       </div>
       <div>
         <h5>© 2022 By Kacper Adamski.</h5>

@@ -1,4 +1,4 @@
-/* 62.5%=10px */
+/* 62.5%=10rem */
 html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,36 +7,46 @@ html {
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 30px 0px 30px; 
+    padding: 2rem 3rem 0rem 3rem; 
     
 }
 
-.editor-name{
-    padding: 0px 0px 0px 15px;
+.header-title{
+    padding-left: 1.5rem;
 }
+
+.header__left-side{
+padding-top: 2rem;
+}
+
+.header-links{
+    display: flex;
+    justify-content: flex-end;
+} 
 
 .header-links--desktop{
-    font-size: 16px;
+    font-size: 1.6rem;
     display: inline-flex;
-    flex-direction: row;
-    width: 280px; 
+    justify-content: flex-end;
+    width: 28.rem; 
     list-style-type: none;
-    padding: -10px 0px 5px 0px;
+    padding-bottom: 1rem;
 }
 
-.header-experience{
-padding-right: 10px;
+.header__link1{
+    padding-right: 1rem;
 }
 
-.header-contact{
-padding-left: 10px;
+.header__link3{
+    padding-left: 1rem;
 }
 
 .menu-icon{
-    width: 20px;
-    height: 20px;
-    padding: 7px 0px 2px 0px;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+    padding-left: 4rem;
 
 }
 
@@ -47,15 +57,24 @@ body{
 footer{
     background-color:rgb(243,243,243);
 }
+
 .navigation {
-    font-size: 20px;
-    display:inline-flex;
-    padding: 5px 0px 0px 0px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
 }
+
+.header__left-side {
+    font-size: 2rem;
+    display:inline-flex;
+    padding-top: 0.5rem;
+}
+
 .circle{
-    font-size: 18px;
-    width: 140px;
-    height: 140px;
+    font-size: 1.8rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -64,146 +83,114 @@ footer{
     align-items: stretch;
     border-style: groove;
     } 
+
 h1{
     font-weight: bold;
     color:rgb(0, 0, 0);
-    padding: 0px 5px 0px 5px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
+
 h2{
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: bold;
     color:rgb(0, 0, 0);
-    padding: 0px 5px 0px 5px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
+
 h3{
     display: inline;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
+
 h4{
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 300;
 }
+
 h5{
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 200;
 }
+
 .header-circle{
     background-color: rgb(238,163,2);
-    width: 25px;
-    height: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
 }
+
 p{
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 300;
-    }
-
-.ig-image{
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: flex-end;
-        }
-
-img{
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    padding: 5px 5px 5px 5px;
 }
-.introduction{
-    max-width: 390px;
+
+.icon--instagram{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.profile-image{
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.introduction__text{
+    max-width: 39rem;
 }
 
 .circle{
     background-color: rgb(9, 196, 124);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
-
-.first-color{
+.circle--first{
     background-color: rgb(238,163,2);
 }
-.second-color{
+
+.circle--second{
     background-color: rgb(255,59,37);
 }
-.third-color{
+
+.circle--third{
     background-color: rgb(128,216,218);
 }
 
 .footer{
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 
 /* Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 76.8rem) {
 
     header{
-        padding: 10px 30px 0px 10px;
-    }
-
-    .navigation{
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .header-links--desktop{
-        display: none;
-    }
-
-    h1{
-        font-size:16px;
-    }
-
-    .circle{
-        font-size: 12px;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        display: inline-flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        align-items: stretch;
-        border-style: groove;
-    }
-    .profile-image{
-        width: 350px;
-        height: 350px;
-    }
-    .round-elements{
-        display:flex;
-        justify-content: space-around;
-        padding: 0px 0px 5px 0px;
-    }
+    padding: 1rem 3rem 0rem 1rem;
 }
-/* Desktop and tablet */
-@media only screen and (min-width: 769px) {
-    .menu-icon{
-        display: none;
-    }
 
-    main {
-        height: 880px;
-        display: flex;
-        justify-content: center;
-    }
-    
+.navigation{
+    display: flex;
+    justify-content: flex-start;
+}
 
-    section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.header-links--desktop{
+    display: none;
+}
 
-    h1{
-        font-size: 70px;
-    }
-    .circle{
-    width: 140px;
-    height: 140px;
+h1{
+    font-size:1.6rem;
+}
+
+.circle{
+    font-size: 1.2rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -211,30 +198,85 @@ img{
     text-align: center;
     align-items: stretch;
     border-style: groove;
-    }
-    .profile-image{
-        display: flex;
-        order: 1;
-        width: 450px;
-        height: 450px;
-        padding: 0px 35px 0px 0px;
-    }
+}
 
-    .columns{
-        order: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
+.profile-image{
+    width: 35rem;
+    height: 35rem;
+}
+
+.circles__container{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+}
+}
 
 
-    .footer{
-        display: flex;
-        justify-content: space-between;
-        padding: 35px 70px 45px 40px;
-    }
+/* Desktop and tablet */
+@media only screen and (min-width: 76.9rem) {
+.header-links{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 127rem;
+} 
 
-    footer{
-        height: 180px;
-    }
+    .menu-icon{
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 14rem;
+    padding-bottom: 18rem;
+}
+    
+.introduction-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 7rem;
+}
+
+.circle{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    border-style: groove;
+}
+
+.profile-image{
+    display: flex;
+    order: 1;
+    width: 45rem;
+    height: 45rem;
+    padding-right:3.5rem;
+}
+
+.columns{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 7rem 4.5rem 4rem;
+}
+
+footer{
+    padding-top: 0.6rem;
+    padding-bottom: 2rem;
+}
 }
