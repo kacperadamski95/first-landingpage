@@ -4,6 +4,27 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 } 
 
+:root {
+    --primary-color: rgb(243,243,243);
+    --secondary-color: rgb(238,163,2);
+    --main-background-color: var(--primary-color);
+    --font-color-primary: rgb(0, 0, 0);
+    --active-color: rgb(146,100,2);
+    --focus-color: rgb(146,100,2);
+    --font-size-base: 1.6rem;
+    --space--xs: 0.5rem;
+    --space--s: 1rem;
+}
+
+a:active {
+    color: var(--active-color);
+    border-bottom: 3px solid var(--active-color);
+}
+
+a:focus {
+    border: 3px solid var(--focus-color);
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -51,11 +72,13 @@ padding-top: 2rem;
 }
 
 body{
-    background-color:rgb(243,243,243);
+    background-color: var(--main-background-color);
+    color: var(--font-color-primary);
+    font-size:var(--font-size-base);
 }
 
 footer{
-    background-color:rgb(243,243,243);
+    background-color: var(--main-background-color);
 }
 
 .navigation {
@@ -86,7 +109,7 @@ footer{
 
 h1{
     font-weight: bold;
-    color:rgb(0, 0, 0);
+    color: var(--font-color-primary);
     padding-right: 0.5rem;
     padding-left: 0.5rem;
 }
@@ -94,7 +117,7 @@ h1{
 h2{
     font-size: 2.2rem;
     font-weight: bold;
-    color:rgb(0, 0, 0);
+    color: var(--font-color-primary);
     padding-right: 0.5rem;
     padding-left: 0.5rem;
 }
