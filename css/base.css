@@ -1,4 +1,4 @@
-/* 62.5%=10rem */
+/* 62.5% 1rem=10px */
 html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +28,9 @@ a:focus {
 header{
     display: flex;
     flex-direction: row;
-    padding: 2rem 3rem 0rem 3rem; 
+    padding-top: 2rem; 
+    padding-right: 3rem;
+    padding-left: 3rem; 
     
 }
 
@@ -36,7 +38,7 @@ header{
     padding-left: 1.5rem;
 }
 
-.header__left-side{
+.header--left-side{
 padding-top: 2rem;
 }
 
@@ -54,11 +56,11 @@ padding-top: 2rem;
     padding-bottom: 1rem;
 }
 
-.header__link1{
+.header__link--first{
     padding-right: 1rem;
 }
 
-.header__link3{
+.header__link--third{
     padding-left: 1rem;
 }
 
@@ -88,7 +90,7 @@ footer{
     padding-top: 0.5rem;
 }
 
-.header__left-side {
+.header--left-side {
     font-size: 2rem;
     display:inline-flex;
     padding-top: 0.5rem;
@@ -99,12 +101,15 @@ footer{
     width: 14rem;
     height: 14rem;
     border-radius: 50%;
+    background-color: rgb(9, 196, 124);
+    font-weight: bold;
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     align-items: stretch;
-    border-style: groove;
+    border-style: solid;
+    border-width: 0.1rem;
     } 
 
 h1{
@@ -160,17 +165,11 @@ p{
     width: 45rem;
     height: 45rem;
     border-radius: 50%;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
 }
 
 .introduction__text{
     max-width: 39rem;
-}
-
-.circle{
-    background-color: rgb(9, 196, 124);
-    font-size: 1.8rem;
-    font-weight: bold;
 }
 
 .circle--first{
@@ -194,7 +193,9 @@ p{
 @media only screen and (max-width: 76.8rem) {
 
     header{
-    padding: 1rem 3rem 0rem 1rem;
+    padding: 1rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
 }
 
 .navigation{
@@ -215,12 +216,6 @@ h1{
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: stretch;
-    border-style: groove;
 }
 
 .profile-image{
@@ -255,7 +250,7 @@ main {
     padding-bottom: 18rem;
 }
     
-.introduction-section{
+.section--introduction{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,23 +260,9 @@ h1{
     font-size: 7rem;
 }
 
-.circle{
-    width: 14rem;
-    height: 14rem;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: stretch;
-    border-style: groove;
-}
-
 .profile-image{
     display: flex;
     order: 1;
-    width: 45rem;
-    height: 45rem;
     padding-right:3.5rem;
 }
 
@@ -295,7 +276,10 @@ h1{
 .footer{
     display: flex;
     justify-content: space-between;
-    padding: 3.5rem 7rem 4.5rem 4rem;
+    padding-top: 3.5rem;
+    padding-right: 7rem; 
+    padding-bottom: 4.5rem; 
+    padding-left: 4rem;
 }
 
 footer{
