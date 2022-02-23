@@ -39,14 +39,65 @@ body {
 
 /* Mobile */
 @media only screen and (max-width: 76.8rem) {
-    h1{
-        font-size: 3rem;
+
+    body {
+        max-width: 32rem;
+        padding-left: var(--space--xs);
+        padding-right: var(--space--xs);
+        display: flex;
+        justify-content: center;
     }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: var(--font-size-base);
+    }
+
+    .experience__pictures {
+        width: 28rem ;
+        height: 18.9rem ;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;;
+    }
+
+    .section--projects__article p {
+        max-width: 28rem;
+        margin: auto;
+    }
+
 }
 
 
 /* Desktop and tablet */
 @media only screen and (min-width: 76.9rem) {
+
+    .section--projects__article {
+        display: flex;
+        flex-direction: block;
+        justify-content: space-between;
+    }
+
+    .section--projects__article,
+    .section--projects h1 {
+        max-width: 120rem;
+        margin: auto;
+    }
+
+    .section--projects h1 {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
     h1 {
         font-size: 4.2rem;
     }
@@ -58,11 +109,14 @@ body {
     p {
         font-size: var(--font-size-base);
         font-weight: lighter;
+        max-width: 42.2rem;
     }
 
     .experience__pictures {
         width: 49.1rem;
         height: 33.1rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
 }
