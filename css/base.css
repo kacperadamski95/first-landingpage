@@ -185,15 +185,15 @@ p {
     max-width: 39rem;
 }
 
-.circle--first {
+.circle:first-of-type {
     background-color: var(--secondary-color);
 }
 
-.circle--second {
+.circle:nth-of-type(2) {
     background-color: rgb(255,59,37);
 }
 
-.circle--third {
+.circle:last-of-type {
     background-color: rgb(128,216,218);
 }
 
