@@ -21,6 +21,8 @@ html {
     --space--l: 2rem;
     --space--xl: 2.5rem;
     --space--xxl: 3rem;
+    --font--weight--lighter: lighter;
+    --font--weight--bold: bold;
 }
 
 a:active {
@@ -41,11 +43,14 @@ body {
 @media only screen and (max-width: 76.8rem) {
 
     body {
-        max-width: 32rem;
         padding-left: var(--space--xs);
         padding-right: var(--space--xs);
         display: flex;
         justify-content: center;
+    }
+
+    .section--projects {
+        max-width: 32rem;
     }
 
     h1 {
@@ -60,19 +65,16 @@ body {
         font-size: var(--font-size-base);
     }
 
-    .experience__pictures {
+    .projects__pictures {
         width: 28rem ;
-        height: 18.9rem ;
-        display: flex;
-        justify-content: center;
-        margin: auto;
+        height: auto ;
         padding-top: 2rem;
         padding-bottom: 2rem;;
     }
 
     .section--projects__article p {
         max-width: 28rem;
-        margin: auto;
+        /* margin: auto; */
     }
 
 }
@@ -83,7 +85,6 @@ body {
 
     .section--projects__article {
         display: flex;
-        flex-direction: block;
         justify-content: space-between;
     }
 
@@ -108,13 +109,13 @@ body {
 
     p {
         font-size: var(--font-size-base);
-        font-weight: lighter;
+        font-weight: var(--font--weight--lighter);
         max-width: 42.2rem;
     }
 
-    .experience__pictures {
+    .projects__pictures {
         width: 49.1rem;
-        height: 33.1rem;
+        height: auto;
         padding-top: 5rem;
         padding-bottom: 5rem;
     }

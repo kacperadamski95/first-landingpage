@@ -11,6 +11,7 @@ html {
     --font-color-primary: rgb(0, 0, 0);
     --active-color: rgb(146,100,2);
     --focus-color: rgb(146,100,2);
+    --screen-width: 76.8rem; 
     --font-size-base: 1.6rem;
     --font-size-large: 2rem;
     --font-size-h2: 2.2rem;
