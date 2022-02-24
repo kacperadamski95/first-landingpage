@@ -1,0 +1,123 @@
+/* 62.5% 1rem=10px */
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: rgb(243,243,243);
+    --secondary-color: rgb(238,163,2);
+    --main-background-color: var(--primary-color);
+    --font-color-primary: rgb(0, 0, 0);
+    --active-color: rgb(146,100,2);
+    --focus-color: rgb(146,100,2);
+    --font-size-base: 1.6rem;
+    --font-size-large: 2rem;
+    --font-size-h1: 3rem;
+    --font-size-h2: 1.9rem;
+    --space--xs: 0.5rem;
+    --space--s: 1rem;
+    --space--m: 1.5rem;
+    --space--l: 2rem;
+    --space--xl: 2.5rem;
+    --space--xxl: 3rem;
+    --font--weight--lighter: lighter;
+    --font--weight--bold: bold;
+}
+
+a:active {
+    color: var(--active-color);
+    border-bottom: 3px solid var(--active-color);
+}
+
+a:focus {
+    border: 3px solid var(--focus-color);
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 76.8rem) {
+
+    body {
+        padding-left: var(--space--xs);
+        padding-right: var(--space--xs);
+        display: flex;
+        justify-content: center;
+    }
+
+    .section--projects {
+        max-width: 32rem;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: var(--font-size-base);
+    }
+
+    .projects__pictures {
+        width: 28rem ;
+        height: auto ;
+        padding-top: 2rem;
+        padding-bottom: 2rem;;
+    }
+
+    .section--projects__article p {
+        max-width: 28rem;
+        /* margin: auto; */
+    }
+
+}
+
+
+/* Desktop and tablet */
+@media only screen and (min-width: 76.9rem) {
+
+    .section--projects__article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section--projects__article,
+    .section--projects h1 {
+        max-width: 120rem;
+        margin: auto;
+    }
+
+    .section--projects h1 {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    p {
+        font-size: var(--font-size-base);
+        font-weight: var(--font--weight--lighter);
+        max-width: 42.2rem;
+    }
+
+    .projects__pictures {
+        width: 49.1rem;
+        height: auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+}

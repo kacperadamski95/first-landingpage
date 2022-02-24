@@ -1,0 +1,76 @@
+/* 62.5% 1rem=10px */
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+:root {
+    --primary-color: rgb(243,243,243);
+    --secondary-color: rgb(238,163,2);
+    --main-background-color: var(--primary-color);
+    --font-color-primary: rgb(0, 0, 0);
+    --active-color: rgb(146,100,2);
+    --focus-color: rgb(146,100,2);
+    --font-size-base: 1.6rem;
+    --font-size-large: 2rem;
+    --font-size-h3: 1.6rem;
+    --font-size-h4: 1.4rem;
+    --font-size-h5: 1.2rem;
+    --font-size-footer: 1.9rem;
+    --space--xs: 0.5rem;
+    --space--s: 1rem;
+    --space--m: 1.5rem;
+    --space--l: 2rem;
+    --space--xl: 2.5rem;
+    --space--xxl: 3rem;
+}
+
+a:active {
+    color: var(--active-color);
+    border-bottom: 3px solid var(--active-color);
+}
+
+a:focus {
+    border: 3px solid var(--focus-color);
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--font-color-primary);
+    font-size:var(--font-size-base);
+}
+
+footer {
+    background-color: var(--main-background-color);
+}
+
+.icon--instagram {
+    width: var(--space--xxl);
+    height: var(--space--xxl);
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer {
+    font-size: var(--font-size-footer);
+}
+
+
+/* Desktop and tablet */
+@media only screen and (min-width: 76.9rem) {
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3.5rem;
+        padding-right: 7rem; 
+        padding-bottom: 4.5rem; 
+        padding-left: 4rem;
+    }
+
+    footer {
+        padding-top: 0.6rem;
+        padding-bottom: var(--space--l);
+    }
+}
