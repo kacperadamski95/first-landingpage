@@ -10,8 +10,6 @@ html {
     --secondary-color: rgb(238,163,2);
     --main-background-color: var(--primary-color);
     --font-color-primary: rgb(0, 0, 0);
-    --active-color: rgb(146,100,2);
-    --focus-color: rgb(146,100,2);
     --font-size-base: 1.6rem;
     --font-size-large: 2rem;
     --space--xs: 0.5rem;
@@ -25,16 +23,6 @@ html {
 a:active {
     color: var(--active-color);
     border-bottom: 3px solid var(--active-color);
-}
-
-a:focus {
-    border: 3px solid var(--focus-color);
-}
-
-body {
-    background-color: var(--main-background-color);
-    color: var(--font-color-primary);
-    font-size:var(--font-size-base);
 }
 
 header {
