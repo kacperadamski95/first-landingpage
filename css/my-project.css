@@ -15,6 +15,10 @@ html {
     --font-size-large: 2rem;
     --font-size-h1: 3rem;
     --font-size-h2: 1.9rem;
+    --font-size-h1-mobile: 2.7rem;
+    --font-size-h1-desktop: 4.2rem;
+    --font-size-h2-mobile: 2.2rem;
+    --font-size-h2-desktop: 2.6rem;
     --space--xs: 0.5rem;
     --space--s: 1rem;
     --space--m: 1.5rem;
@@ -54,11 +58,11 @@ body {
     }
 
     h1 {
-        font-size: 2.7rem;
+        font-size: var(--font-size-h1-mobile);
     }
     
     h2 {
-        font-size: 2.2rem;
+        font-size: var(--font-size-h2-mobile);
     }
 
     p {
@@ -68,8 +72,8 @@ body {
     .projects__pictures {
         width: 28rem ;
         height: auto ;
-        padding-top: 2rem;
-        padding-bottom: 2rem;;
+        padding-top: var(--space--l);
+        padding-bottom: var(--space--l);;
     }
 
     .section--projects__article p {
@@ -100,11 +104,11 @@ body {
     }
 
     h1 {
-        font-size: 4.2rem;
+        font-size: var(--font-size-h1-desktop);
     }
 
     h2 {
-        font-size: 2.6rem;
+        font-size: var(--font-size-h2-desktop);
     }
 
     p {
