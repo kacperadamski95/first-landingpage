@@ -58,7 +58,7 @@ address {
 }
 
 /* Mobile */
-@media only screen and (max-width: 76.8rem) {
+@media only screen and (max-width: 768px) {
     body {
         padding-left: var(--space--xs);
         padding-right: var(--space--xs);
@@ -110,7 +110,7 @@ address {
 
 
 /* Desktop and tablet */
-@media only screen and (min-width: 76.9rem) {
+@media only screen and (min-width: 769px) {
     .section--contact {
         display: flex;
         justify-content: space-between;
