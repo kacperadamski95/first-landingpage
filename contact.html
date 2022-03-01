@@ -31,44 +31,38 @@
 
     <main>
         <section class="section--contact">
-            <div class="section--contact--informations">
+            <address class="section--contact--informations">
                 <h1>Contact</h1>
                 <p>Looking forward to hearing from you</p>
                 <h2>Phone</h2>
                 <p>792890697</p>
                 <h2>Email</h2>
                 <p>kacper.adamski95@gmail.com</p>
-            </div>
-            <div class="section--contact__form">
-                <form method="GET">
-                    <div class="section--contact__form__labels">
+            </address>
+            <form method="GET" class="form--contact">
+                <div class="field">
                     <label for="first-name">First Name</label>
-                    <br>
                     <input id="first-name" name="first-name" type="text" minlength="1" maxlength="100">
-                    <br>
+                </div>
+                <div class="field">
                     <label for="last-name">Last Name</label>
-                    <br>
                     <input id="last-name" name="last-name" type="text" minlength="1" maxlength="100">
-                    </div>
-                    <div class="section--contact__form__labels">
-                    <label for="email">Email *</label>
-                    <br>
-                    <input id="email" name="email" type="text" minlength="1" maxlength="100">
-                    <br>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" minlength="1" maxlength="100" required>
+                </div>
+                <div class="field">
                     <label for="subject">Subject</label>
-                    <br>
                     <input id="subject" name="subject" type="text" minlength="1" maxlength="100">
-                    </div>
-                    <div class="section--contact__form__labels">
+                </div>
+                <div class="field textarea">
                     <label for="message">Message</label>
-                    <br>
-                    <input id="message" name="message" type="text" minlength="1" maxlength="100">
-                    <br>
-                    <input type="submit" value="Submit" class="section--contact__button">
-                    
-                    </div>  
-                </form>
-            </div>
+                    <textarea id="message" name="message" type="text" minlength="1" maxlength="100"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="section--contact__button">
+
+            </form>
         </section>
     </main>
 

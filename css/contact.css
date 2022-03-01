@@ -24,6 +24,9 @@ html {
     --space--l: 2rem;
     --space--xl: 2.5rem;
     --space--xxl: 3rem;
+    --width--input: 28rem; 
+    --height--input--small: 4.2rem;
+    --height--input--large: 12.7rem;
 }
 
 a:active {
@@ -50,6 +53,9 @@ p {
     font-weight:lighter;
 }
 
+address {
+    font-style: normal;
+}
 
 /* Mobile */
 @media only screen and (max-width: 76.8rem) {
@@ -61,7 +67,6 @@ p {
     .section--contact {
         max-width: 32rem;
         margin: auto;
-        
     }
 
     h1 {
@@ -72,15 +77,15 @@ p {
     [name="last-name"], 
     [name="email"],
     [name="subject"] {
-        width: 28rem;
-        height: 4.2rem;
+        width: 100%;
+        height: var(--height--input--small);
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
 
     [name="message"] {
-        width: 28rem;
-        height: 12.7rem;
+        width: 100%;
+        height: var(--height--input--large);
         margin-top: var(--space--s);
         margin-bottom: var(--space--l);
     }
@@ -92,6 +97,7 @@ p {
         background-color: var(--secondary-color);
         border-style: solid;
         border-width: 0.1rem;
+        border-color: var(--font-color-primary);
         margin-top: var(--space--s);
         margin-bottom: var(--space--l);
     }
@@ -100,7 +106,6 @@ p {
         padding-top: var(--space--xl);
         padding-bottom: var(--space--xl);
     }
-
 }
 
 
@@ -109,54 +114,67 @@ p {
     .section--contact {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 25rem;
+        padding-top: 7rem;
     }
     
     .section--contact--informations,
-    .section--contact__form {
-        max-width: 120rem;
+    .form--contact {
+        max-width: 60rem;
         margin: auto;
+    }
+
+    .field { 
+        display: flex;
+        flex-direction: column;
+        flex-basis: 49%;
+    } 
+
+    .field.textarea {
+        flex-basis: 60%;
     }
 
     [name="first-name"],
     [name="last-name"], 
     [name="email"],
     [name="subject"] {
-        width: 21.5rem;
-        height: 4.5rem;
+        width: var(--width--input);
+        height: var(--height--input--small);
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
 
     [name="message"] {
-        width: 30rem;
-        height: 14.1rem;
+        height: var(--height--input--large);
         margin-top: var(--space--s);
         margin-bottom: var(--space--l);
     }
 
-    .section--contact__button{
+    .section--contact__button {
         width: 14rem;
         height: 14rem;
         border-radius: 50%;
         background-color: var(--secondary-color);
         border-style: solid;
         border-width: 0.1rem;
-        margin-top: var(--space--s);
+        border-color: var(--font-color-primary);
+        font-weight: bold;
+        margin: auto;
+        margin-top: var(--space--l);
         margin-bottom: var(--space--l);
     }
     
     h1 {
         font-size: var(--font-size-h1-desktop);
     }
-
-     .section--contact__form__labels{ 
+    
+    .form--contact {
         display: flex;
-        flex-direction: column;
-    } 
-
-    .section--contact__form {
-        display:flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 7rem;
     }
 
+    .section--contact--informations {
+        padding-bottom: 12rem;
+    }
 }
