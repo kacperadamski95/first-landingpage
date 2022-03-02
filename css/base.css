@@ -28,6 +28,7 @@ html {
 }
 
 body {
+    font-family: 'Bitter', serif;
     background-color: var(--main-background-color);
     color: var(--font-color-primary);
     font-size:var(--font-size-base);
