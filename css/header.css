@@ -93,8 +93,7 @@ padding-top: var(--space--l);
     height: var(--space--l);
     padding-top: 0.7rem;
     padding-bottom: 0.2rem;
-    padding-left: 4rem;
-
+    padding-left: 7.3rem;
 }
 
 .header--left-side {
@@ -113,7 +112,7 @@ padding-top: var(--space--l);
 
 
 /* Mobile */
-@media only screen and (max-width: 76.8rem) {
+@media only screen and (max-width: 768px) {
     header {
     padding: var(--space--s);
     padding-right: var(--space--xxl);
@@ -130,9 +129,8 @@ padding-top: var(--space--l);
     }
 }
 
-
 /* Desktop and tablet */
-@media only screen and (min-width: 76.9rem) {
+@media only screen and (min-width: 769px) {
     .header-links {
         display: flex;
         justify-content: flex-end;

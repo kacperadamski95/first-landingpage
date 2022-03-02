@@ -55,9 +55,19 @@ footer {
     font-size: var(--font-size-footer);
 }
 
+h4 {
+    font-size: var(--font-size-h4);
+    font-weight: 200;
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+    font-weight: 200;
+}
+
 
 /* Desktop and tablet */
-@media only screen and (min-width: 76.9rem) {
+@media only screen and (min-width: 769px) {
 
 
     .footer {

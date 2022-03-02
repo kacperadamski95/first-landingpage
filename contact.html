@@ -1,1 +1,93 @@
-<h1>A tutaj kontakt do mnie</h1>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Description of my experience</title>
+    <link href="css/contact.css" type="text/css" rel="stylesheet">
+    <link href="css/header.css" type="text/css" rel="stylesheet">
+    <link href="css/footer.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="header--left-side">
+                <span class="header-circle"> </span>
+                <span class="header-title">Kacper Adamski editor</span>
+            </div>
+            <div class="header-links">
+                <ul class="header-links--desktop">
+                    <li class="header__link--first"><a href="my-experience.html">My experience</a></li>
+                    <li class="header__link--second"><a href="my-project.html">My project</a></li>
+                    <li class="header__link--third"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img src="images/basic-menu.png" class="menu-icon">
+        </nav>
+    </header>
+
+    <main>
+        <section class="section--contact">
+            <address class="section--contact--informations">
+                <h1>Contact</h1>
+                <p>Looking forward to hearing from you</p>
+                <h2>Phone</h2>
+                <p>792890697</p>
+                <h2>Email</h2>
+                <p>kacper.adamski95@gmail.com</p>
+            </address>
+            <form method="GET" class="form--contact">
+                <div class="field">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" name="first-name" type="text" minlength="1" maxlength="100">
+                </div>
+                <div class="field">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" name="last-name" type="text" minlength="1" maxlength="100">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" minlength="1" maxlength="100" required>
+                </div>
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" minlength="1" maxlength="100">
+                </div>
+                <div class="field textarea">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" type="text" minlength="1" maxlength="100"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="section--contact__button">
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="footer">
+            <div class="footer__phone">
+                <h3>Phone number</h3>
+                <h4>792890697</h4>
+            </div>
+            <div class="footer__email">
+                <h3>Email adress</h3>
+                <h4>kacper.adamski95@gmail.com</h4>
+            </div>
+            <div class="footer_instagram">
+                <h3>Follow me on instagram</h3>
+                <a href="https://www.instagram.com/kacper.adamskii/"><img src="images/instagram.png"
+                        class="icon--instagram"></a>
+            </div>
+            <div>
+                <h5>© 2022 By Kacper Adamski.</h5>
+                <h5>Proudly created with Visual Studio Code</h5>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

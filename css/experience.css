@@ -42,70 +42,6 @@ body {
     font-size:var(--font-size-base);
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    padding-top: var(--space--l); 
-    padding-right: var(--space--xxl);
-    padding-left: var(--space--xxl); 
-    
-}
-
-.header-title {
-    padding-left: var(--space--m);
-}
-
-.header--left-side {
-padding-top: var(--space--l);
-}
-
-.header-links {
-    display: flex;
-    justify-content: flex-end;
-} 
-
-.header-links--desktop {
-    font-size: var(--font-size-base);
-    display: inline-flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    padding-bottom: var(--space--s);
-}
-
-.header__link--first {
-    padding-right: var(--space--s);
-}
-
-.header__link--third {
-    padding-left: var(--space--s);
-}
-
-.menu-icon {
-    width: var(--space--l);
-    height: var(--space--l);
-    padding-top: 0.7rem;
-    padding-bottom: 0.2rem;
-    padding-left: 4rem;
-
-}
-
-footer {
-    background-color: var(--main-background-color);
-}
-
-.navigation {
-    font-size: var(--font-size-large);
-    display: flex;
-    justify-content: space-between;
-    padding-top: var(--space--xs);
-}
-
-.header--left-side {
-    font-size: var(--font-size-large);
-    display:inline-flex;
-    padding-top: var(--space--xs);
-}
-
 .section--experience h2 {
     font-size: var(--font-size-h2);
     font-weight: bold;
@@ -141,49 +77,8 @@ ul {
     font-size: var(--font-size-p-ul-time);
 }
 
-.header-circle {
-    background-color: var(--secondary-color);
-    width: var(--space--xl);
-    height: var(--space--xl);
-    border-radius: 50%;
-}
-
-.icon--instagram {
-    width: var(--space--xxl);
-    height: var(--space--xxl);
-    display: flex;
-    align-items: flex-end;
-}
-
-.footer {
-    font-size: var(--font-size-footer);
-}
-
-
 /* Mobile */
-@media only screen and (max-width: 76.8rem) {
-        header {
-        padding: var(--space--s);
-        padding-right: var(--space--xxl);
-        padding-left: var(--space--s);
-    }
-
-    .navigation {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .header-links--desktop {
-        display: none;
-    }
-
-    .circle {
-        font-size: 1.2rem;
-        width: 9rem;
-        height: 9rem;
-        border-radius: 50%;
-    }
-
+@media only screen and (max-width: 768px) {
     h1 {
         font-size: 2.2rem;
         font-weight: bold;
@@ -197,20 +92,7 @@ ul {
 
 
 /* Desktop and tablet */
-@media only screen and (min-width: 76.9rem) {
-    .header-links {
-        display: flex;
-        justify-content: flex-end;
-        padding-left: 44rem;
-    } 
-
-    .navigation {
-        font-size: var(--font-size-large);
-        display: flex;
-        justify-content: space-between;
-        padding-top: var(--space--xs);
-    }
-
+@media only screen and (min-width: 769px) {
     .section--experience h1 {
         display: block;
         width: 100%;
@@ -220,9 +102,11 @@ ul {
     .section--experience h1 {
         max-width: 120rem;
         margin: auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
-    .section--experience__article{
+    .section--experience__article {
         display: flex;
         flex-direction: row;
     }
@@ -234,6 +118,7 @@ ul {
     .section--experience--description {
         min-width: 40vw;
         padding-left: 60rem;
+        padding-top: var(--space--m);
     }
 
     .section--experience--description p,
@@ -251,7 +136,7 @@ ul {
         padding-left: 11rem;
     }
 
-    ul.section--experience--description{
+    ul.section--experience--description {
         padding-left: 73rem;
     }
 
@@ -266,10 +151,6 @@ ul {
         display: inline-block;
         
     }
-
-    .menu-icon {
-        display: none;
-    }
         
     .section--experience {
         display: flex;
@@ -280,23 +161,10 @@ ul {
     h1 {
         font-size: var(--font-size-h1);
         font-weight: 700;
+        padding-top: 5rem;
         }
-
-    .header-links--desktop {
-        padding-left: 87.2rem;
-    }
-
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 3.5rem;
-        padding-right: 7rem; 
-        padding-bottom: 4.5rem; 
-        padding-left: 4rem;
-    }
-
-    footer {
-        padding-top: 0.6rem;
-        padding-bottom: var(--space--l);
+    
+    .section--experience--description p:first-of-type {
+        margin-bottom: 7rem;
     }
 }
