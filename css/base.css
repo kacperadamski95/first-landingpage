@@ -42,6 +42,12 @@ a:focus {
     border: 3px solid var(--focus-color);
 }
 
+a:visited,
+a:-webkit-any-link {
+    text-decoration: none;
+    color: var(--font-color-primary);
+}
+
 header {
     display: flex;
     flex-direction: row;
