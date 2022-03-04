@@ -130,12 +130,12 @@ header {
         padding-top: 10rem;
     }
     
-    /* .x-icon {
+    .menu-icon-close {
         display: flex;
         justify-content: flex-end;
         padding-top: 2rem;
-        padding-right: 2rem;
-    } */
+        
+    } 
 
     [src="images/x-icon.png"] {
         width: 1.7rem;
@@ -150,12 +150,17 @@ header {
         background-color: var(--primary-color);
         opacity: 0;
         height: 0.1rem;
-        transition: all 1s;
+        transition: all 2s;
     }
 
     .navigation--mobile--active {
         opacity: 1;
         height: 100vh;
+    }
+
+    .menu--icon--hidden {
+        opacity: 0;
+        height: 0.1rem; 
     }
 }
 
