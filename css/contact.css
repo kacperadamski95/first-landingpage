@@ -58,6 +58,15 @@ address {
     font-style: normal;
 }
 
+.submit--text--appear {
+    display: block;
+    font-size: var(--font-size-base);
+}
+
+.submit--text {
+    display: none;
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
     body {
