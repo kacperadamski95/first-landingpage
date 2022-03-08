@@ -133,6 +133,7 @@ h1 {
     color: var(--font-color-primary);
     padding-right: var(--space--xs);
     padding-left: var(--space--xs);
+    cursor: pointer;
 }
 
 h2 {
@@ -215,7 +216,7 @@ p {
 
 
 /* Mobile */
-@media only screen and (max-width: 76.8rem) {
+@media only screen and (max-width: 768px) {
 
     header {
     padding: var(--space--s);
@@ -257,7 +258,7 @@ p {
 
 
 /* Desktop and tablet */
-@media only screen and (min-width: 76.9rem) {
+@media only screen and (min-width: 769px) {
     .header-links {
         display: flex;
         justify-content: flex-end;
@@ -310,5 +311,9 @@ p {
     footer {
         padding-top: 0.6rem;
         padding-bottom: var(--space--l);
+    }
+
+    .body--background--desktop {
+        background-color: aquamarine;
     }
 }
