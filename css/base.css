@@ -207,6 +207,12 @@ p {
     font-size: var(--font-size-footer);
 }
 
+.body--scroll {
+    background-color: rgb(150, 91, 14);
+    color: green;
+    font-size:var(--font-size-base);
+}
+
 
 /* Mobile */
 @media only screen and (max-width: 76.8rem) {
@@ -246,15 +252,6 @@ p {
         display:flex;
         justify-content: space-around;
         padding-bottom: var(--space--xs);
-    }
-
-    .body--scroll--js {
-        background-color: var(--main-background-color);
-        transition: 0.3s all;
-    }
-
-    .body--scroll {
-        background-color: rgb(150, 91, 14);
     }
 }
 

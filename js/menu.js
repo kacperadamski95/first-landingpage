@@ -1,54 +1,35 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     //cały kod wykonujemy w DOMContentLoaded i dodajemy EventListenera na DOMContentLoaded tylko raz
+    //tutaj ustaliłem zmienne, które muszą być na tym samym poziomie
     const menuIconHamburger = document.querySelector(".menu-icon");
-
+    const menuIconClose = document.querySelector(".menu-icon-close");
+    const navigationMobile = document.querySelector(".navigation--mobile");
+    //dodałem event listenera na kliknięcie ikonki hamburgera
     menuIconHamburger.addEventListener("click", (event) => {
-
-        const navigationMobile = document.querySelector(".navigation--mobile");
-
+    //tutaj na kliknięciu pokazuje się nawigacja
         navigationMobile.classList.add("navigation--mobile--active");
+    //tutaj na kliknięciu chowam ikonkę hamburgera
+        menuIconHamburger.classList.add("menu--icon--hidden");
+    });
+    //na kliknięcie ikonki X 
+    menuIconClose.addEventListener("click", (event) => {
+        //usuwam nawigację
+        navigationMobile.classList.remove("navigation--mobile--active");
+        //usuwam klasę, która sprawia, że jest niewidoczna ikonka hamburgera
+        menuIconHamburger.classList.remove("menu--icon--hidden");
+        
 
-        const menuIconClose = document.querySelector(".menu-icon-close");
-
-        //when clicking the hamburger menu its changing to x menu and displays 3 links, when clicking on x menu it goes back to first state
-
-        menuIconClose.addEventListener("click", (event) => {
-
-            navigationMobile.classList.remove("navigation--mobile--active");
-
-            menuIconHamburger.classList.add("menu--icon--hidden");
-
-            menuIconHamburger.classList.remove("menu--icon--hidden");
-
-            //adding new background on body when scrolling
-
-            const bodyBody = document.querySelector(".body--scroll--js");
-
-            bodyBody.addEventListener("scroll", (event) => {
-
-                const bodyScroll = document.querySelector(".body--scroll");
-
-                bodyScroll.classList.add("body--scroll")
-            });
-        });
-
+        
     });
 
+    //adding new background on body when scrolling
+    const bodyBody = document.querySelector("body");
 
+    window.addEventListener("scroll", (event) => {
 
-    // menuIconHamburger.classList.add("menu--icon--hidden"); - TO JEST NUMER 2 to odkomentować jak wrzucę przywracanie hamburherowej ikonki
-
-    /* 2. schowaj ikonkę hamburgera:
-    dodaj klasę (.menu--icon--hidden)
-    */
+        bodyBody.classList.add("body--scroll");
+    });
 });
-
-/* 1. złap ikonkę X (zamknięcie menu) - const menuIconClose(zmienić klasę w html) = document.querySelector(".x-icon");
-dodaj do niej EventListenera takiego jak do ikonki hamburgera - menuIconHamburger.addEventListener("click touch", (event) => {
-    const navigationMobile = document.querySelector(".navigation--mobile");
-i z elementu z klasą navigation--mobile usuń klasę navigation--mobile--active (do wygooglowania) (zamiast add będzie remove raczej, ale sprawdzić)   navigationMobile.classList.remove?("navigation--mobile--active");
-3. musze później przywrócić hamburgerową ikonkę - usunięcie klasy (.menu--icon--hidden)  menuIconHamburger.classList.remove?("menu--icon--hidden");
-*/
 
 
 
