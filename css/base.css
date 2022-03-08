@@ -247,6 +247,15 @@ p {
         justify-content: space-around;
         padding-bottom: var(--space--xs);
     }
+
+    .body--scroll--js {
+        background-color: var(--main-background-color);
+        transition: 0.3s all;
+    }
+
+    .body--scroll {
+        background-color: rgb(150, 91, 14);
+    }
 }
 
 
