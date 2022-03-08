@@ -1,11 +1,9 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    //cały kod wykonujemy w DOMContentLoaded i dodajemy EventListenera na DOMContentLoaded tylko raz
     const submitButton = document.querySelector(".section--contact__button");
+    const textAfterSubmission = document.querySelector(".submit--text");
+    console.log("halkocojest");
+    submitButton.addEventListener("click", (event) => {
 
-    submitButton.addEventListener("submit", (event) => {
-
-        const submitButton = document.querySelector(".submit--text");
-        
-        submitButton.classList.add("submit--text--appear");
+        textAfterSubmission.classList.add("submit--text--appear");
     });
 });
