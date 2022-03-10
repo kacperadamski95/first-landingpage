@@ -39,6 +39,7 @@ a:focus {
 }
 
 body {
+    font-family: 'Bitter', serif;
     background-color: var(--main-background-color);
     color: var(--font-color-primary);
     font-size:var(--font-size-base);
@@ -55,6 +56,15 @@ p {
 
 address {
     font-style: normal;
+}
+
+.submit--text {
+    display: none;
+}
+
+.submit--text--appear {
+    display: block;
+    font-size: var(--font-size-base);
 }
 
 /* Mobile */
