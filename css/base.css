@@ -28,6 +28,7 @@ html {
 }
 
 body {
+    font-family: 'Bitter', serif;
     background-color: var(--main-background-color);
     color: var(--font-color-primary);
     font-size:var(--font-size-base);
@@ -41,6 +42,7 @@ a:active {
 a:focus {
     border: 3px solid var(--focus-color);
 }
+
 
 a:visited,
 a:-webkit-any-link {
@@ -148,10 +150,6 @@ h3 {
     font-size: var(--font-size-base);
 }
 
-.footer h3 {
-    display: inline;
-}
-
 h4 {
     font-size: var(--font-size-h4);
     font-weight: 300;
@@ -162,23 +160,9 @@ h5 {
     font-weight: 200;
 }
 
-.header-circle {
-    background-color: var(--secondary-color);
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-}
-
 p {
     font-size: var(--font-size-p);
     font-weight: 300;
-}
-
-.icon--instagram {
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: flex-end;
 }
 
 .profile-image {
@@ -247,6 +231,9 @@ p {
         display: none;
     }
 
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
     h1 {
         font-size: var(--font-size-base);
     }
@@ -277,6 +264,7 @@ p {
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
+ menu-button
     .header-links {
         display: flex;
         justify-content: flex-end;
@@ -316,6 +304,7 @@ p {
         flex-direction: column;
         justify-content: space-evenly;
     }
+ menu-button
 
     .footer {
         display: flex;
@@ -334,4 +323,5 @@ p {
     .body--background--desktop {
         background-color: aquamarine;
     }
+master
 }

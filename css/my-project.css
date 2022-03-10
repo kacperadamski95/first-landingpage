@@ -15,6 +15,10 @@ html {
     --font-size-large: 2rem;
     --font-size-h1: 3rem;
     --font-size-h2: 1.9rem;
+    --font-size-h1-mobile: 2.7rem;
+    --font-size-h1-desktop: 4.2rem;
+    --font-size-h2-mobile: 2.2rem;
+    --font-size-h2-desktop: 2.6rem;
     --space--xs: 0.5rem;
     --space--s: 1rem;
     --space--m: 1.5rem;
@@ -35,30 +39,32 @@ a:focus {
 }
 
 body {
+    font-family: 'Bitter', serif;
     background-color: var(--main-background-color);
 }
 
 
 /* Mobile */
-@media only screen and (max-width: 76.8rem) {
+@media only screen and (max-width: 768px) {
 
     body {
         padding-left: var(--space--xs);
         padding-right: var(--space--xs);
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
     }
 
     .section--projects {
         max-width: 32rem;
+        margin: auto;
     }
 
     h1 {
-        font-size: 2.7rem;
+        font-size: var(--font-size-h1-mobile);
     }
     
     h2 {
-        font-size: 2.2rem;
+        font-size: var(--font-size-h2-mobile);
     }
 
     p {
@@ -68,24 +74,24 @@ body {
     .projects__pictures {
         width: 28rem ;
         height: auto ;
-        padding-top: 2rem;
-        padding-bottom: 2rem;;
+        padding-top: var(--space--l);
+        padding-bottom: var(--space--l);;
     }
 
     .section--projects__article p {
         max-width: 28rem;
-        /* margin: auto; */
     }
 
 }
 
 
 /* Desktop and tablet */
-@media only screen and (min-width: 76.9rem) {
+@media only screen and (min-width: 769px) {
 
     .section--projects__article {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 5rem;
     }
 
     .section--projects__article,
@@ -100,11 +106,12 @@ body {
     }
 
     h1 {
-        font-size: 4.2rem;
+        font-size: var(--font-size-h1-desktop);
     }
 
     h2 {
-        font-size: 2.6rem;
+        font-size: var(--font-size-h2-desktop);
+        padding-top: var(--space--xl);
     }
 
     p {
@@ -118,6 +125,10 @@ body {
         height: auto;
         padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+
+    main {
+        padding-bottom: 6rem;
     }
 
 }
