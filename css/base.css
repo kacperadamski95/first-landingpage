@@ -214,6 +214,20 @@ p {
     font-size:var(--font-size-base);
 }
 
+.email--paragraph {
+    display: none;
+    transition: 1s;
+}
+
+.email-paragraph-information {
+    display: column;
+    background-color: darkkhaki;
+    font-size: var(--font-size-base);
+}
+
+.body--background--kurdebele {
+    background-color: var(--main-background-color);
+}
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
@@ -253,6 +267,10 @@ p {
         display:flex;
         justify-content: space-around;
         padding-bottom: var(--space--xs);
+    }
+
+    .body--background--mobile {
+        background-color: orange;
     }
 }
 
