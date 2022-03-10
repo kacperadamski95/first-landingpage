@@ -22,15 +22,6 @@ html {
     --space--xxl: 3rem;
 }
 
-a:active {
-    color: var(--active-color);
-    border-bottom: 3px solid var(--active-color);
-}
-
-a:focus {
-    border: 3px solid var(--focus-color);
-}
-
 body {
     background-color: var(--main-background-color);
     color: var(--font-color-primary);
@@ -51,7 +42,7 @@ header {
 }
 
 .header--left-side {
-padding-top: var(--space--l);
+    padding-top: var(--space--l);
 }
 
 .header--left-side {
@@ -114,18 +105,60 @@ padding-top: var(--space--l);
 /* Mobile */
 @media only screen and (max-width: 768px) {
     header {
-    padding: var(--space--s);
-    padding-right: var(--space--xxl);
-    padding-left: var(--space--s);
+        padding: var(--space--s);
+        padding-right: var(--space--xxl);
+        padding-left: var(--space--s);
     }
 
-.navigation {
-    display: flex;
-    justify-content: flex-start;
+    .navigation {
+        display: flex;
+        justify-content: flex-start;
     }
 
-.header-links--desktop {
-    display: none;
+    .header-links--desktop {
+        display: none;
+    }
+
+    .header-links--mobile {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+    }
+    
+    .menu-icon-close {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 2rem;
+        
+    } 
+
+    [src="images/x-icon.png"] {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .header-links--mobile a {
+        padding-bottom: 3rem;
+    }
+
+    .navigation--mobile {
+        background-color: var(--primary-color);
+        opacity: 0;
+        height: 0.1rem;
+        transition: all 2s;
+    }
+
+    .navigation--mobile--active {
+        opacity: 1;
+        height: 100vh;
+    }
+
+    .menu--icon--hidden {
+        opacity: 0;
+        height: 0.1rem; 
     }
 }
 
@@ -150,6 +183,10 @@ padding-top: var(--space--l);
 
     .header-links--desktop {
         padding-left: 87.2rem;
+    }
+
+    .navigation--mobile {
+        display: none;
     }
 
 }

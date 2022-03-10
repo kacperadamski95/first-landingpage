@@ -33,11 +33,16 @@
   <link href="css/base.css" type="text/css" rel="stylesheet">
   <link href="css/header.css" type="text/css" rel="stylesheet">
   <link href="css/footer.css" type="text/css" rel="stylesheet">
+ menu-button
+  <script src="js/menu.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!--	/styles-->
+
 
 </head>
 
-<body>
+<body class="body--scroll--js">
   <header>
     <nav class="navigation">
       <div class="header--left-side">
@@ -52,8 +57,22 @@
         </ul>
       </div>
     </nav>
+ menu-button
+    <img src="images/basic-menu.png" class="menu-icon">
+    <div class="navigation--mobile">
+      <div class="menu-icon-close">
+        <img src="images/x-icon.png">
+      </div>
+      <div class="header-links--mobile">
+        <a href="my-experience.html">My experience</a>
+        <a href="my-project.html">My project</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
     <a href="menu-button.html"><img src="images/basic-menu.png" class="menu-icon"></a>
     </nav>
+
   </header>
   <main>
     <section class="section--introduction">
@@ -90,6 +109,7 @@
         <h3>Email adress</h3>
         <h4>kacper.adamski95@gmail.com</h4>
       </div>
+      <p class="email--paragraph">If you want to contact me, send me an e-mail at this adress</p>
       <div class="footer_instagram">
         <h3>Follow me on instagram</h3>
         <a href="https://www.instagram.com/kacper.adamskii/"><img src="images/instagram.png"
