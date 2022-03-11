@@ -33,27 +33,38 @@
     <link href="css/header.css" type="text/css" rel="stylesheet">
     <link href="css/footer.css" type="text/css" rel="stylesheet">
     <!--	/styles-->
-    <script src="contact.js" type="text/javascript"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/contact.js" type="text/javascript"></script>
 </head>
 
 <body>
     <header>
         <nav class="navigation">
-            <div class="header--left-side">
-                <span class="header-circle"> </span>
-                <span class="header-title">Kacper Adamski editor</span>
-            </div>
-            <div class="header-links">
-                <ul class="header-links--desktop">
-                    <li class="header__link--first"><a href="my-experience.html">My experience</a></li>
-                    <li class="header__link--second"><a href="my-project.html">My project</a></li>
-                    <li class="header__link--third"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+          <div class="header--left-side">
+            <span class="header-circle"> </span>
+            <span class="header-title">Kacper Adamski editor</span>
+          </div>
+          <div class="header-links">
+            <ul class="header-links--desktop">
+              <li class="header__link--first"><a href="my-experience.html">My experience</a></li>
+              <li class="header__link--second"><a href="my-project.html">My project</a></li>
+              <li class="header__link--third"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </nav>
-        <a href="menu-button.html"><img src="images/basic-menu.png" class="menu-icon"></a>
-        </nav>
-    </header>
+        <div class="navigation--mobile">
+          <div class="menu-icon-close">
+            <img src="images/x-icon.png">
+          </div>
+          <div class="header-links--mobile">
+            <a href="my-experience.html">My experience</a>
+            <a href="my-project.html">My project</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <img src="images/basic-menu.png" class="menu-icon">
+    
+      </header>
 
     <main>
         <section class="section--contact">
@@ -84,7 +95,7 @@
                 </div>
                 <div class="field textarea">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" type="text" minlength="1" maxlength="100"></textarea>
+                    <textarea id="message" name="message" type="text" minlength="1" maxlength="100" rows="7"></textarea>
                 </div>
                 <input type="submit" value="Submit" class="section--contact__button">
             </form>
@@ -95,25 +106,26 @@
     <hr>
     <footer>
         <div class="footer">
-            <div class="footer__phone">
-                <h3>Phone number</h3>
-                <h4>792890697</h4>
-            </div>
-            <div class="footer__email">
-                <h3>Email adress</h3>
-                <h4>kacper.adamski95@gmail.com</h4>
-            </div>
-            <div class="footer_instagram">
-                <h3>Follow me on instagram</h3>
-                <a href="https://www.instagram.com/kacper.adamskii/"><img src="images/instagram.png"
-                        class="icon--instagram"></a>
-            </div>
-            <div>
-                <h5>© 2022 By Kacper Adamski.</h5>
-                <h5>Proudly created with Visual Studio Code</h5>
-            </div>
+          <div class="footer__phone">
+            <h3>Phone number</h3>
+            <h4>792890697</h4>
+          </div>
+          <div class="footer__email">
+            <h3>Email adress</h3>
+            <h4>kacper.adamski95@gmail.com</h4>
+          </div>
+          <p class="email--paragraph">If you want to contact me, send me an e-mail at this adress</p>
+          <div class="footer_instagram">
+            <h3>Follow me on instagram</h3>
+            <a href="https://www.instagram.com/kacper.adamskii/"><img src="images/instagram.png"
+                class="icon--instagram"></a>
+          </div>
+          <div>
+            <h5>© 2022 By Kacper Adamski.</h5>
+            <h5>Proudly created with Visual Studio Code</h5>
+          </div>
         </div>
-    </footer>
+      </footer>
 </body>
 
 </html>

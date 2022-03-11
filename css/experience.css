@@ -78,6 +78,28 @@ ul {
     font-size: var(--font-size-p-ul-time);
 }
 
+.body--scroll {
+    background-color: rgb(150, 91, 14);
+    color: green;
+    font-size:var(--font-size-base);
+}
+
+.email--paragraph {
+    display: none;
+    transition: 1s;
+}
+
+.email-paragraph-information {
+    display: flex;
+    flex-direction: column;
+    background-color: darkkhaki;
+    font-size: var(--font-size-base);
+}
+
+.body--background--kurdebele {
+    background-color: red;
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
     h1 {
@@ -87,6 +109,10 @@ ul {
 
     time {
         display: block;
+    }
+
+    .body--background--mobile {
+        background-color: orange;
     }
 
 }
@@ -167,5 +193,9 @@ ul {
     
     .section--experience--description p:first-of-type {
         margin-bottom: 7rem;
+    }
+
+    .body--background--desktop {
+        background-color: aquamarine;
     }
 }

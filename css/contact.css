@@ -67,6 +67,28 @@ address {
     font-size: var(--font-size-base);
 }
 
+.body--scroll {
+    background-color: rgb(150, 91, 14);
+    color: green;
+    font-size:var(--font-size-base);
+}
+
+.email--paragraph {
+    display: none;
+    transition: 1s;
+}
+
+.email-paragraph-information {
+    display: flex;
+    flex-direction: column;
+    background-color: darkkhaki;
+    font-size: var(--font-size-base);
+}
+
+.body--background--kurdebele {
+    background-color: red;
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
     body {
@@ -115,6 +137,10 @@ address {
     .section--contact form {
         padding-top: var(--space--xl);
         padding-bottom: var(--space--xl);
+    }
+
+    .body--background--mobile {
+        background-color: orange;
     }
 }
 
@@ -186,5 +212,9 @@ address {
 
     .section--contact--informations {
         padding-bottom: 12rem;
+    }
+
+    .body--background--desktop {
+        background-color: aquamarine;
     }
 }

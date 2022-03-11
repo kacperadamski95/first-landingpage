@@ -26,12 +26,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const bodyBody = document.querySelector("body");
     // const introductionText = document.querySelector(".introduction__text"); - czy to jest potrzebne
 
-    window.addEventListener("scroll", (event) => {
+    // window.addEventListener("scroll", (event) => {
 
-        bodyBody.classList.add("body--scroll");
-    });
+    //     bodyBody.classList.add("body--scroll");
+    // });
 
-    const bodyBackgroundDesktop = document.querySelector(".body--background--desktop");
+    // const bodyBackgroundDesktop = document.querySelector(".body--background--desktop");
 
     window.addEventListener("resize", (event) => {
         //Na dole mam ten sam warunek, ale zapisany w wersji skróconej, używać tamtego
@@ -55,9 +55,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const emailTextInformation = document.querySelector(".footer__email h4");
     const textMouseUp = document.querySelector(".email--paragraph")
     emailTextInformation.addEventListener("mousedown" , (event) => {
-        if ("mousedown") { 
-            emailTextInformation.classList.add("email-paragraph-information");
-        }
+            textMouseUp.classList.add("email-paragraph-information");
+    //dodać klasę z remove na mouseup
         // else { 
         //     emailTextInformation.classList.add(textMouseUp);
         // }
@@ -73,13 +72,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
     window.addEventListener("resize", (event) => {
         if (window.innerWidth < 600) {
             bodyBody.classList.add("body--background--mobile");
-        }
-    });
-    window.addEventListener("resize", (event) => {
-        if (window.innerWidth < 768) {
+        } else {
             bodyBody.classList.add("body--background--kurdebele");
         }
+        console.log(window.innerWidth);
     });
+    // window.addEventListener("resize", (event) => {
+    //     if (window.innerWidth > 600) {
+    //         
+    //     }
+    // });
 });
 
 

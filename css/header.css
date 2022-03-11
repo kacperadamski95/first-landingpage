@@ -32,7 +32,6 @@ header {
     display: flex;
     flex-direction: row;
     padding-top: var(--space--l); 
-    padding-right: var(--space--xxl);
     padding-left: var(--space--xxl); 
     
 }
@@ -84,7 +83,7 @@ header {
     height: var(--space--l);
     padding-top: 0.7rem;
     padding-bottom: 0.2rem;
-    padding-left: 7.3rem;
+    /* padding-left: 10rem; */
 }
 
 .header--left-side {
@@ -106,13 +105,15 @@ header {
 @media only screen and (max-width: 768px) {
     header {
         padding: var(--space--s);
-        padding-right: var(--space--xxl);
+        /* padding-right: var(--space--xxl); */
         padding-left: var(--space--s);
+        display: flex;
+        justify-content: space-between;
     }
 
     .navigation {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .header-links--desktop {
@@ -127,6 +128,8 @@ header {
         align-items: center;
         padding-top: 10rem;
     }
+
+    
     
     .menu-icon-close {
         display: flex;
@@ -147,6 +150,7 @@ header {
     .navigation--mobile {
         background-color: var(--primary-color);
         opacity: 0;
+        width: 0.1rem;
         height: 0.1rem;
         transition: all 2s;
     }
@@ -164,10 +168,14 @@ header {
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
+    header {
+        padding-right: var(--space--xxl);
+    }
+    
     .header-links {
         display: flex;
         justify-content: flex-end;
-        padding-left: 44rem;
+        padding-left: 40rem;
     } 
 
     .navigation {
@@ -175,6 +183,7 @@ header {
         display: flex;
         justify-content: space-between;
         padding-top: var(--space--xs);
+        margin: auto;
     }
 
     .menu-icon {
